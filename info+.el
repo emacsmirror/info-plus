@@ -3142,7 +3142,7 @@ Non-nil NOMSG means do not show a status message."
                     nodename end)
                 (re-search-backward "^\^_")
                 (search-forward "Node: ")
-                (setq nodename  (and (looking-at (Info-following-node-name-re))  (match-string-no-properties 1))
+                (setq nodename  (and (looking-at (Info-following-node-name-re))  (match-string-no-properties 1)))
                 (search-forward "\n\^_" nil 'move)
                 (beginning-of-line)
                 (setq end  (point))
